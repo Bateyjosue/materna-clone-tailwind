@@ -63,7 +63,7 @@ After the server is runned open your brower and browse to the following address:
 
 - GitHub: [Bateyjosue](https://github.com/Bateyjosue)
 - Twitter: [bateyjosue](https://twitter.com/JosueBatey)
-- LinkedIn: [bateujosue](https://linkedin.com/in/josuebatey)
+- LinkedIn: [bateyjosue](https://linkedin.com/in/josuebatey)
 ## Acknowledgement
     To : The Gym x Ojemba Team
 
