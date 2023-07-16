@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./css/css.css">
   </head>
   <body class="">
-    <header class="relative">
-      <div class="logo relative top-16 w-[30%] mx-2 z-10 "><img src="./assets/logo-small.svg" alt=""></div>
+    <header class="relative z-10">
+      <div class="logo relative top-16 w-[20%] mx-2 z-10"><img src="./assets/logo-small.svg" alt=""></div>
       <nav class="hidden lg:flex">
         <ul>
           <li><a href="/">Portofolio</a></li>
@@ -44,29 +44,93 @@
       </div>
     </header>
     <main class="">
-      <section class="headline absolute top-14 z-0 h-[100vh] px-2 pt-36">
-        <div class="headline__text border-[.5rem] border-red-600 px-2 py-20">
-          <h1 class="text-4xl font-bold leading-none">
+      <section class="headline relative top-[-60px] z-0 h-[100vh] px-2 pt-10 text-white">
+        <div class="headline__text border-[.5rem] border-red-600 px-2 py-16 mt-24 flex flex-col gap-4 mr-32">
+          <h2 class="text-4xl font-[500] leading-[36px] tracking-[1px]">
             WE ARE DIGITIZING YOUR WORLD.
-          </h1>
-          <P>As a key globally active IT service provider, we advise and assist you in all aspects of digitization and provide tailor-made technologies for agile, flexible and secure IT.</P>
+          </h2>
+          <P class="font-[300]">As a key globally active IT service provider, we advise and assist you in all aspects of digitization and provide tailor-made technologies for agile, flexible and secure IT.</P>
         </div>
-        <div class="headline__nav">
-          <ul class="mobile">
-            <li>
+        <div class="headline__nav my-6 absolute right-2 left-2 bottom-[-8rem]">
+          <ul class="mobile flex flex-col gap-4">
+            <li class="bg-red-700 p-4 flex  items-center gap-3 font-[300]">
               <span>Portfolio</span>
-              <span class="material-symbols-outlined">arrow_forward_ios</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
             </li>
-            <li>
+            <li class="bg-red-700 p-4 flex  items-center gap-3 font-[300]">
               <span>About us</span>
-              <span class="material-symbols-outlined">arrow_forward_ios</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
             </li>
-            <li>
+            <li class="bg-red-700 p-4 flex  items-center gap-3 font-[300]">
               <span>Careers</span>
-              <span class="material-symbols-outlined">arrow_forward_ios</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
             </li>
           </ul>
         </div>
+      </section>
+      <section class="portfolio mt-20 px-4 py-8 bg-white">
+        <h2 class="text-3xl text-gray-500 text-center font-[300] py-6">Learn more about our portfolio</h2>
+        <ul class="portfolio__cards flex flex-col gap-4">
+          <li class="portfolio__card bg-[#e9eef1]">
+            <div class="portfolio__image relative">
+              <img src="./assets/AS-388785133-Home-Portfolio-Cloud.png" alt="">
+              <span class="absolute top-2 left-2 z-10 bg-[#e9eef1] text-sm p-1 text-gray-500">Cloud</span>
+            </div>
+            <div class="portfolio__content p-4 flex flex-col gap-3 font-[300]">
+              <h5><a href="" class="text-[#c30a17] hover:underline hover:text-gray-700">We accompany your Journey2Cloud</a></h5>
+              <p class="text-gray-800 font-300">We analyze your application landscapes and transfer them step by step into a sustainable model.</p>
+              <button class="bg-[#c30a17] text-white w-full py-3 flex justify-center gap-2 items-center hover:opacity-75">
+                <span class="hover:underline font-[400]">More</span>
+                <span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
+              </button>
+            </div>
+          </li>
+          
+          <li class="portfolio__card bg-[#e9eef1]">
+            <div class="portfolio__image relative">
+              <img src="./assets/AS-162962912-Cyber-Security.png" alt="">
+              <span class="absolute top-2 left-2 z-10 bg-[#e9eef1] text-sm p-1 text-gray-500">Cyber Security Check</span>
+            </div>
+            <div class="portfolio__content p-4 flex flex-col gap-3 font-[300]">
+              <h5><a href="" class="text-[#c30a17] hover:underline hover:text-gray-700">Cyber Security</a></h5>
+              <p class="text-gray-800 font-300">Our cyber services he protection for your IT and information security.</p>
+              <button class="bg-[#c30a17] text-white w-full py-3 flex justify-center gap-2 items-center hover:opacity-75">
+                <span class="hover:underline font-[400]">More</span>
+                <span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
+              </button>
+            </div>
+          </li>
+
+          <li class="portfolio__card bg-[#e9eef1]">
+            <div class="portfolio__image relative">
+              <img src="./assets/AS-404775145-Home-Portfolio-Manufacturing.png" alt="">
+              <span class="absolute top-2 left-2 z-10 bg-[#e9eef1] text-sm p-1 text-gray-500">processes</span>
+            </div>
+            <div class="portfolio__content p-4 flex flex-col gap-3 font-[300]">
+              <h5><a href="" class="text-[#c30a17] hover:underline hover:text-gray-700">Enterprise Service Management</a></h5>
+              <p class="text-gray-800 font-300">Benefit from the market leader for service management. More than 1,000 customers across all sectors.</p>
+              <button class="bg-[#c30a17] text-white w-full py-3 flex justify-center gap-2 items-center hover:opacity-75">
+                <span class="hover:underline font-[400]">More</span>
+                <span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
+              </button>
+            </div>
+          </li>
+
+          <li class="portfolio__card bg-[#e9eef1]">
+            <div class="portfolio__image relative">
+              <img src="./assets/AS-279424236-Home-Portfolio-ESM.png" alt="">
+              <span class="absolute top-2 left-2 z-10 bg-[#e9eef1] text-sm p-1 text-gray-500">IoT</span>
+            </div>
+            <div class="portfolio__content p-4 flex flex-col gap-3 font-[300]">
+              <h5><a href="" class="text-[#c30a17] hover:underline hover:text-gray-700">IoT-based services for manufacturing</a></h5>
+              <p class="text-gray-800 font-300">Materna’s technology expertise helps companies to develop their business processes further enabling them to enter new markets.</p>
+              <button class="bg-[#c30a17] text-white w-full py-3 flex justify-center gap-2 items-center hover:opacity-75">
+                <span class="hover:underline font-[400]">More</span>
+                <span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
+              </button>
+            </div>
+          </li>
+        </ul>
       </section>
     </main>
     
