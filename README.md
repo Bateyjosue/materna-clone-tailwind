@@ -9,10 +9,10 @@ A clone of the official https://www.materna.com/ home page design using tailwind
 <table align="center">
  <tr>
   <td>
-   ![](./assets/mock.png)
+   <img src="./assets/mock.png" />
   </td>
    <td>
-   ![](./assets/mock_gif_mobile.gif)
+   <img src="./assets/mock_gif_mobile.gif" />
   </td>
  </tr>
 </table>
