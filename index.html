@@ -2,14 +2,291 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Materna Clone | Home</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./css/css.css">
   </head>
-  <body class="flex justify-center items-center h-[100vh] bg-red-600 text-white">
-    <div id="app" class="text-4xl font-bold md:text-8xl ">
-      <h2>Materna Cloning</h2>
-    </div>
+  <body class="">
+    <header class="relative z-10 lg:flex lg:items-center">
+      <div class="logo relative top-16 w-[20%] mx-4 z-10 lg:grow-0 lg:w-[15%] lg:absolute lg:top-0"><img src="./assets/logo-small.svg" alt=""></div>
+      <nav class="hidden lg:flex bg-red-700  lg:grow lg:absolute top-[5rem] right-0 left-[18%] lg:h-fit lg:justify-between">
+        <ul class="flex text-white bg-red-700">
+          <li class="py-4 px-4 border-r-[1px] border-gray-900 hover:underline"><a href="/">Portofolio</a></li>
+          <li class="py-4 px-4 border-r-[1px] border-gray-900 hover:bg-red-800 hover:underline"><a href="#">Industries</a></li>
+          <li class="py-4 px-4 border-r-[1px] border-gray-900 hover:bg-red-800 hover:underline"><a href="#">Custimers</a></li>
+          <li class="py-4 px-4 border-r-[1px] border-gray-900 hover:bg-red-800 hover:underline"><a href="#">About us</a></li>
+          <li class="py-4 px-4 border-r-[1px] border-gray-900 hover:bg-red-800 hover:underline"><a href="#">Careers</a></li>
+        </ul>
+        <div class="search p-4 bg-red-800 hover:bg-gray-800">
+          <img src="./assets/loupe-w.svg" alt="">
+        </div>
+      </nav>
+      <div class="header__top hidden lg:flex lg:bg-white px-4 py-4 absolute top-0 right-0 left-0 justify-end">
+        <ul class="flex gap-8 ">
+          <li>News</li>
+          <li>Contact</li>
+          <li class="flex items-center gap-2">
+            <span>English</span>
+            <span class="material-symbols-outlined text-red-700">expand_more</span>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile__nav absolute top-0 right-0 left-0 bg-red-700 py-2 lg:hidden">
+        <ul class="flex items-center h-10 text-white text-xl">
+          <li class="px-4 flex items-center gap-2 hover:bg-red-900 hover:py-4">
+            <span class="material-symbols-outlined">menu</span>
+            <span>Menu</span>
+          </li>
+          <li class="px-2 flex items-center gap-2 hover:bg-red-900 hover:py-4">
+            <span class="material-symbols-outlined">search</span>
+            <span>Search</span>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="">
+      <section class="headline relative top-[-60px] z-0 h-[100vh] px-4 pt-10 text-white md:flex  md:h-[96vh] md:top-[-8rem] md:gap-2 md:pr-16 md:m-0 lg:h-[140vh] lg:top-[-0rem] lg:pt-[10rem]" id="headline">
+        <div class="headline__text w-[90%] border-[.5rem] border-red-600 px-4 py-16 mt-24 flex flex-col gap-4 mr-32 md:mr-0 md:relative md:top-16 md:h-[35%] lg:h-[70%] md:items-center md:w-2/4 lg:w-[30%] justify-center lg:py-8">
+          <h2 class="text-3xl font-[400] leading-[36px] tracking-[1px] lg:text-4xl">
+            WE ARE DIGITIZING YOUR WORLD.
+          </h2>
+          <P class="font-[300]">As a key globally active IT service provider, we advise and assist you in all aspects of digitization and provide tailor-made technologies for agile, flexible and secure IT.</P>
+        </div>
+        <div class="headline__nav my-6 absolute right-2 left-2 bottom-[-7rem] md:py-23  md:h-[50%] md:flex md:items-center md:relative md:w-3/4 md:top-16">
+          <ul class="mobile flex flex-col gap-4 w-full md:gap-10 lg:hidden">
+            <li class="bg-red-700 p-4 flex  items-center gap-3 font-[300]">
+              <span>Portfolio</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
+            </li>
+            <li class="bg-red-700 p-4 flex  items-center gap-3 font-[300]">
+              <span>About us</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
+            </li>
+            <li class="bg-red-700 p-4 flex  items-center gap-3 font-[300]">
+              <span>Careers</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
+            </li>
+          </ul>
+          <ul class="hidden lg:flex lg:items-center lg:flex-row ml-6 lg:gap-16 font-[300] lg:mt-[3rem]">
+            <li class="bg-red-700 border-4 border-white flex flex-col">
+              <img src="./assets/M-Startseite-Quadrat-Portfolio.jpg" alt="">
+              <span class="py-2 m-auto space-auto">Portfolio</span>
+            </li>
+            <li class="bg-red-700 border-4 border-white flex flex-col">
+              <img src="./assets/M-Startseite-Quadrat-Unternehmen.jpg" alt="">
+              <span class="py-2 m-auto space-auto">About us</span>
+            </li>
+            <li class="bg-red-700 border-4 border-white flex flex-col">
+              <img src="./assets/M-Startseite-Quadrat-Karriere.jpg" alt="">
+              <span class="py-2 m-auto space-auto">Careers</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="portfolio mt-20 px-4 py-8 bg-white md:mt-[-7rem] lg:mt-[-1rem]">
+        <h2 class="text-3xl text-gray-500 text-center font-[300] py-6 md:text-gray-700 md:font-[400]">Learn more about our portfolio</h2>
+        <ul class="portfolio__cards flex flex-col gap-4 md:grid md:grid-cols-2 lg:grid-cols-4">
+          <li class="portfolio__card bg-[#e9eef1] md:flex md:flex-col">
+            <div class="portfolio__image relative">
+              <img src="./assets/AS-388785133-Home-Portfolio-Cloud.png" alt="">
+              <span class="absolute top-2 left-2 z-10 bg-[#e9eef1] text-sm p-1 text-gray-500">Cloud</span>
+            </div>
+            <div class="portfolio__content p-4 flex flex-col gap-3 font-[300] md:grow md:justify-between">
+              <h5><a href="" class="text-[#c30a17] hover:underline hover:text-gray-700 text-2xl ">We accompany your Journey2Cloud</a></h5>
+              <p class="text-gray-800 font-300">We analyze your application landscapes and transfer them step by step into a sustainable model.</p>
+              <button class="bg-[#c30a17] text-white w-full py-3 flex justify-center gap-2 items-center hover:opacity-75 md:w-fit md:self-end md:px-4">
+                <span class="hover:underline font-[400]">More</span>
+                <span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
+              </button>
+            </div>
+          </li>
+          
+          <li class="portfolio__card bg-[#e9eef1] md:flex md:flex-col">
+            <div class="portfolio__image grow-1 relative">
+              <img src="./assets/AS-162962912-Cyber-Security.png" alt="">
+              <span class="absolute top-2 left-2 z-10 bg-[#e9eef1] text-sm p-1 text-gray-500">Cyber Security Check</span>
+            </div>
+            <div class="portfolio__content p-4 flex flex-col gap-3 font-[300]  md:grow md:justify-between">
+              <h5><a href="" class="text-[#c30a17] hover:underline hover:text-gray-700 text-2xl ">Cyber Security</a></h5>
+              <p class="text-gray-800 font-300">Our cyber services he protection for your IT and information security.</p>
+              <button class="bg-[#c30a17] text-white w-full py-3 flex justify-center gap-2 items-center hover:opacity-75 md:w-fit md:self-end md:px-4" >
+                <span class="hover:underline font-[400]">More</span>
+                <span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
+              </button>
+            </div>
+          </li>
+
+          <li class="portfolio__card bg-[#e9eef1] md:flex md:flex-col">
+            <div class="portfolio__image relative">
+              <img src="./assets/AS-404775145-Home-Portfolio-Manufacturing.png" alt="">
+              <span class="absolute top-2 left-2 z-10 bg-[#e9eef1] text-sm p-1 text-gray-500">processes</span>
+            </div>
+            <div class="portfolio__content p-4 flex flex-col gap-3 font-[300] md:grow md:justify-between">
+              <h5><a href="" class="text-[#c30a17] hover:underline hover:text-gray-700 text-2xl ">Enterprise Service Management</a></h5>
+              <p class="text-gray-800 font-300">Benefit from the market leader for service management. More than 1,000 customers across all sectors.</p>
+              <button class="bg-[#c30a17] text-white w-full py-3 flex justify-center gap-2 items-center hover:opacity-75 md:w-fit md:self-end md:px-4">
+                <span class="hover:underline font-[400]">More</span>
+                <span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
+              </button>
+            </div>
+          </li>
+
+          <li class="portfolio__card bg-[#e9eef1] md:flex md:flex-col">
+            <div class="portfolio__image relative">
+              <img src="./assets/AS-279424236-Home-Portfolio-ESM.png" alt="">
+              <span class="absolute top-2 left-2 z-10 bg-[#e9eef1] text-sm p-1 text-gray-500">IoT</span>
+            </div>
+            <div class="portfolio__content p-4 flex flex-col gap-3 font-[300]">
+              <h5><a href="" class="text-[#c30a17] hover:underline hover:text-gray-700 text-2xl ">IoT-based services for manufacturing</a></h5>
+              <p class="text-gray-800 font-300">Materna’s technology expertise helps companies to develop their business processes further enabling them to enter new markets.</p>
+              <button class="bg-[#c30a17] text-white w-full py-3 flex justify-center gap-2 items-center hover:opacity-75   md:w-fit md:self-end md:px-4">
+                <span class="hover:underline font-[400]">More</span>
+                <span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="top__position p-4  bg-[#e9eef1] md:px-4 md:py-16 md:mt-8">
+        <article class="top__card bg-white md:w-[80%] md:m-auto lg:w-full lg:flex ">
+          <div class="top__card__image lg:w-2/4">
+            <img src="./assets/E-Portfolio-Lsg-ESM-ISG-Cover.png" alt="" class="md:w-full">
+          </div>
+          <div class="top__card__content p-4 flex flex-col gap-3 font-[300] md:flex md:flex-col lg:w-2/4 lg:justify-between">
+            <h5><a href="" class="text-[#c30a17] hover:underline hover:text-gray-700 text-2xl ">Top position in ESM Report</a></h5>
+            <p class="text-gray-800 font-300">Enterprise Service Management is one of the cornerstones of any company's digitization strategy. In the new ISG Provider Lens™ Report - Enterprise Service Management 2021 - Germany, Materna comes out on top in three quadrants.</p>
+            <button class="border-2 border-[#c30a17] text-[#c30a17] mt-6 w-full py-3 flex justify-center gap-2 items-center hover:bg-red-100 md:w-fit md:self-end md:px-4 ">
+              <span class="hover:underline font-[400]">Read More</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
+            </button>
+          </div>
+        </article>
+      </section>
+      
+      <section class="behind__it p-4 bg-[#e9eef1] md:py-14 md:mt-[1px]">
+        <h2 class="text-3xl text-gray-500 text-center font-[300] py-6">Materna is Behind it</h2>
+        <ul>
+          <li class="portfolio__card bg-white md:w-[80%] md:m-auto lg:w-full lg:flex">
+            <div class="portfolio__image relative lg:w-2/4">
+              <img src="./assets/M-Flughafen-Denver-SBD.png" alt="" class="md:w-full">
+              <span class="absolute top-2 left-2 z-10 bg-[#e9eef1] text-sm p-1 text-gray-500">Denver Airport</span>
+            </div>
+            <div class="portfolio__content p-4 flex flex-col gap-3 font-[300] md:flex md:flex-col lg:w-2/4 lg:justify-between">
+              <h5><a href="" class="text-[#c30a17] hover:underline hover:text-gray-700 text-2xl ">Denver International Airport with automated baggage check-in</a></h5>
+              <p class="text-gray-800 font-300">Denver International Airport has automated baggage check-in for its passengers as part of its comprehensive Great Hall redevelopment project. Materna IPS install 86 bag drop machines and launched them in cooperation wit United Airlines and Southwest Airlines - the lagest self bag drop installation in the US.</p>
+              <button class="bg-[#c30a17] text-white mt-6 w-full py-3 flex justify-center gap-2 items-center hover:opacity-75 md:w-fit md:self-end md:px-4">
+                <span class="hover:underline">More about the Self Bag Drop project</span>
+                <span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
+              </button>
+            </div>
+          </li>
+        </ul>
+        <ul class="slide__behind__it hidden lg:flex my-4 gap-4">
+          <li class="relative">
+            <img class="" src="./assets/M-Flughafen-Denver-SBD.png" alt="">
+            <span class="absolute top-[-1.5rem] left-2 rotate-[-90deg] w-16 h-16"><img src="./assets/next-upright.svg" alt=""></span>
+          </li>
+          <li class="relative">
+            <img class="" src="./assets/vw-financial-service.jpg" alt="">
+            <span class="absolute top-[-1.5rem] left-2 rotate-[-90deg] w-16 h-16"><img src="./assets/next-upright.svg" alt=""></span>
+          </li>
+          <li class="relative">
+            <img class="" src="./assets/AS-130417189_206837819.jpg" alt="">
+            <span class="absolute top-[-1.5rem] left-2 rotate-[-90deg] w-16 h-16"><img src="./assets/next-upright.svg" alt=""></span>
+          </li>
+          <li class="relative">
+            <img class="" src="./assets/AS-225919671.jpg" alt="">
+            <span class="absolute top-[-1.5rem] left-2 rotate-[-90deg] w-16 h-16"><img src="./assets/next-upright.svg" alt=""></span>
+          </li>
+        </ul>
+        <div class="slide__control py-12 flex  gap-1 justify-center">
+          <span class="material-symbols-outlined bg-gray-800 text-lg h-3 w-3 text-transparent">square</span>
+          <span class="material-symbols-outlined bg-[#c30a17] text-lg h-3 w-3 text-transparent transition ease-in-out delay-150 hover:translate-y-[-10px] duration-300">square</span>
+          <span class="material-symbols-outlined bg-[#c30a17] text-lg h-3 w-3 text-transparent transition ease-in-out delay-150 hover:translate-y-[-10px] duration-300">square</span>
+          <span class="material-symbols-outlined bg-[#c30a17] text-lg h-3 w-3 text-transparent transition ease-in-out delay-150 hover:translate-y-[-10px] duration-300">square</span>
+          <span class="material-symbols-outlined bg-[#c30a17] text-lg h-3 w-3 text-transparent transition ease-in-out delay-150 hover:translate-y-[-10px] duration-300">square</span>
+          <span class="material-symbols-outlined bg-[#c30a17] text-lg h-3 w-3 text-transparent transition ease-in-out delay-150 hover:translate-y-[-10px] duration-300">square</span>
+          <span class="material-symbols-outlined bg-[#c30a17] text-lg h-3 w-3 text-transparent transition ease-in-out delay-150 hover:translate-y-[-10px] duration-300">square</span>
+        </div>
+        <div class="actions__button text-[#c30a17] flex gap-4 text-sm">
+          <span class="hidden lg:block">
+            <span>print</span>
+            <span class="material-symbols-outlined text-[15px] font-[900] mt-1">print</span>
+          </span>
+          <span>
+            <span>recommend</span>
+            <span class="material-symbols-outlined text-[15px] font-[900] mt-1">share</span>
+          </span>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-[#3a3e41]">
+      <section class="footer__nav p-4 bg-[#3a3e41]">
+        <ul class=" py-14 text-white flex flex-col gap-8 md:grid md:grid-cols-2 lg:grid-cols-6 ">
+          <li class="flex justify-between md:flex-col lg:justify-start">
+            <a href="" class="font-bold hover:underline">Portfolio</a>
+            <span class="material-symbols-outlined text-sm md:hidden">arrow_forward_ios</span>
+            <ul class="hidden  md:block font-[300] my-6 leading-loose">
+              <li class="hover:underline">Focus Areas</li>
+              <li class="hover:underline">Competencies</li>
+              <li class="hover:underline">Technologies</li>
+              <li class="hover:underline">Indestries</li>
+            </ul>
+          </li>
+          <li class="flex justify-between md:flex-col lg:justify-start">
+            <a href="" class="font-bold hover:underline">About us</a>
+            <span class="material-symbols-outlined text-sm md:hidden">arrow_forward_ios</span>
+            <ul class="hidden  md:block font-[300] my-6 leading-loose">
+              <li class="hover:underline">Materna Group</li>
+              <li class="hover:underline">Management</li>
+              <li class="hover:underline">Locations</li>
+              <li class="hover:underline">Paterners</li>
+              <li class="hover:underline">Sustainability and CSR</li>
+              <li class="hover:underline">Reseach and Development</li>
+            </ul>
+          </li>
+          <li class="flex justify-between md:flex-col lg:justify-start">
+            <a href="" class="font-bold hover:underline">Customers</a>
+            <span class="material-symbols-outlined text-sm md:hidden">arrow_forward_ios</span>
+            <ul class="hidden  md:block font-[300] my-6 leading-loose">
+              <li class="hover:underline">Customers</li>
+            </ul>
+          </li>
+          <li class="flex justify-between md:flex-col lg:justify-start">
+            <a href="" class="font-bold hover:underline">Careers</a>
+            <span class="material-symbols-outlined text-sm md:hidden">arrow_forward_ios</span>
+            <ul class="hidden  md:block font-[300] my-6 leading-loose">
+              <li class="hover:underline">Careers</li>
+            </ul>
+          </li>
+          <li class="hidden md:flex"></li>
+          <li class="flex justify-between md:flex-col lg:justify-start md:order-last">
+            <a href="" class="font-bold hover:underline">Service</a>
+            <span class="material-symbols-outlined text-sm md:hidden">arrow_forward_ios</span>
+            <ul class="hidden  md:block font-[300] my-6 leading-loose">
+              <li class="hover:underline">Materna Support</li>
+              <li class="hover:underline">Contact</li>
+              <li class="hover:underline">Imprint & Copyright</li>
+              <li class="hover:underline">Compliance at Materna</li>
+              <li class="hover:underline">Data privacy statement</li>
+              <li class="hover:underline">Data privacy information for customers</li>
+              <li class="hover:underline">Data privacy information for suppliers</li>
+              <li class="hover:underline">Sitemap</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="footer__bottom text-white bg-gray-800 h-24 flex items-center p-4 backdrop-blur-2xl border-t-2">
+        <span>&copy; Materna 2023</span>
+      </section>
+      <section class="btn__up fixed bottom-12 right-2 w-10 h-12">
+        <a href="#headline">
+          <img src="./assets/navToTop.svg" alt="">
+        </a>
+      </section>
+    </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
